@@ -899,7 +899,7 @@ export default function Home() {
             {/* Small Turban/Beard logo watermark */}
             <div className="relative w-16 h-16 rounded-full border border-gold-primary/20 overflow-hidden mb-8 opacity-75">
               <Image
-                src="/logo.jpeg"
+                src="/logo.png"
                 alt="The Singh Saab Logo Watermark"
                 fill
                 sizes="64px"

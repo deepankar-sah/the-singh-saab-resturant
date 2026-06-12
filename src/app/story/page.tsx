@@ -102,7 +102,7 @@ export default function StoryPage() {
           {/* Subtle watermark logo in background */}
           <div className="absolute inset-0 z-0 opacity-[0.03] flex items-center justify-center pointer-events-none">
             <Image
-              src="/logo.jpeg"
+              src="/logo.png"
               alt="The Singh Saab Logo Watermark"
               width={600}
               height={600}

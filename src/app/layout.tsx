@@ -32,6 +32,14 @@ export const metadata: Metadata = {
   title: "The Singh Saab | Fine Dining & Multi-Cuisine | Jamshedpur",
   description: "Experience premium multi-cuisine fine dining at The Singh Saab in Mango, Jamshedpur. Indulge in signature Chinese starters, warm soups, tandoori classics, and comforting Continental appetizers in a sophisticated, noir-inspired luxury setting.",
   keywords: ["The Singh Saab", "Singh Saab Jamshedpur", "Fine Dining Jamshedpur", "Multi-cuisine Restaurant Mango", "Best Chinese Food Jamshedpur", "Celebration restaurant Jamshedpur"],
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({

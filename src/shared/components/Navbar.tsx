@@ -115,7 +115,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-10 h-10 rounded-full border border-gold-primary/30 overflow-hidden logo-mark shadow-[0_0_15px_rgba(212,175,55,0.1)] group-hover:border-gold-accent transition-all duration-300">
               <Image
-                src="/logo.jpeg"
+                src="/logo.png"
                 alt="The Singh Saab Logo"
                 fill
                 priority
