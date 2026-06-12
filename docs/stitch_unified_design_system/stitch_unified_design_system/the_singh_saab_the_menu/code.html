@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu | The Singh Saab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-low": "#1b1b1b",
+                    "inverse-on-surface": "#303030",
+                    "secondary-fixed-dim": "#d2c888",
+                    "secondary-fixed": "#efe4a2",
+                    "on-primary-container": "#6c5800",
+                    "outline": "#98907b",
+                    "outline-variant": "#4c4635",
+                    "on-tertiary-fixed-variant": "#004e5f",
+                    "inverse-surface": "#e2e2e2",
+                    "on-secondary-fixed-variant": "#4e4715",
+                    "tertiary-container": "#79dfff",
+                    "on-primary": "#3b2f00",
+                    "secondary-container": "#514a17",
+                    "on-primary-fixed-variant": "#564500",
+                    "surface-container": "#1f1f1f",
+                    "surface-dim": "#131313",
+                    "on-tertiary-container": "#006278",
+                    "on-error": "#690005",
+                    "surface": "#131313",
+                    "surface-tint": "#e7c443",
+                    "surface-container-lowest": "#0e0e0e",
+                    "surface-variant": "#353535",
+                    "secondary": "#d2c888",
+                    "primary-container": "#f3cf4d",
+                    "on-secondary-fixed": "#201c00",
+                    "on-background": "#e2e2e2",
+                    "inverse-primary": "#715c00",
+                    "background": "#131313",
+                    "error": "#ffb4ab",
+                    "tertiary": "#d4f3ff",
+                    "on-secondary": "#373101",
+                    "primary": "#ffedba",
+                    "primary-fixed-dim": "#e7c443",
+                    "on-surface": "#e2e2e2",
+                    "error-container": "#93000a",
+                    "surface-container-high": "#2a2a2a",
+                    "on-tertiary-fixed": "#001f27",
+                    "primary-fixed": "#ffe17c",
+                    "tertiary-fixed": "#b4ebff",
+                    "surface-bright": "#393939",
+                    "on-secondary-container": "#c4b97c",
+                    "surface-container-highest": "#353535",
+                    "tertiary-fixed-dim": "#6dd4f3",
+                    "on-surface-variant": "#cfc6af",
+                    "on-primary-fixed": "#231b00",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary": "#003642"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "container-max": "1280px",
+                    "base": "8px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "headline-md": [
+                            "Bodoni Moda"
+                    ],
+                    "body-lg": [
+                            "Hanken Grotesk"
+                    ],
+                    "body-md": [
+                            "Hanken Grotesk"
+                    ],
+                    "label-sm": [
+                            "Hanken Grotesk"
+                    ],
+                    "display-lg-mobile": [
+                            "Bodoni Moda"
+                    ],
+                    "display-lg": [
+                            "Bodoni Moda"
+                    ]
+            },
+            "fontSize": {
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.01em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "display-lg": [
+                            "72px",
+                            {
+                                    "lineHeight": "80px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        /* Base Styles */
+        body {
+            background-color: #000000;
+            color: #e2e2e2;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow-x: hidden;
+        }
+
+        /* Noir Excellence Utilities */
+        .glass-panel {
+            background: rgba(18, 18, 18, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(243, 207, 77, 0.1);
+        }
+
+        .gold-bloom:hover {
+            box-shadow: 0 0 20px rgba(243, 207, 77, 0.15);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .gold-glow {
+            text-shadow: 0 0 10px rgba(243, 207, 77, 0.3);
+        }
+
+        .text-gradient-gold {
+            background: linear-gradient(135deg, #FFF3B0 0%, #f3cf4d 50%, #d2c888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Menu Specific */
+        .dotted-leader {
+            border-bottom: 1px dotted rgba(243, 207, 77, 0.3);
+            flex-grow: 1;
+            margin: 0 16px;
+            position: relative;
+            top: -6px;
+        }
+
+        .menu-category-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(243, 207, 77, 0.3) 50%, transparent 100%);
+            margin: 48px 0;
+            position: relative;
+        }
+        
+        .menu-category-divider::after {
+            content: "♦";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #f3cf4d;
+            font-size: 14px;
+            background: #000;
+            padding: 0 16px;
+        }
+
+        .ornamental-line {
+            width: 60px;
+            height: 1px;
+            background-color: #f3cf4d;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="font-body-md text-body-md text-on-background min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md dark:bg-background/80 border-b border-outline-variant/30 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-base max-w-container-max mx-auto left-0 right-0">
+<div class="font-headline-md text-headline-md text-primary tracking-tighter uppercase dark:text-primary">
+<a class="hover:opacity-80 transition-opacity" href="/">THE SINGH SAAB</a>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-300" href="/menu">Menu</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/story">Our Story</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/gallery">Gallery</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="/reservations">Reservations</a>
+</div>
+<div class="hidden md:block">
+<button class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-6 py-3 rounded uppercase tracking-wider hover:bg-primary transition-colors duration-300 shadow-[0_0_15px_rgba(243,207,77,0.2)]">
+                Reserve a Table
+            </button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">menu</span>
+</button>
+</nav>
+<main class="flex-grow pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-24 text-center">
+<div class="flex items-center justify-center gap-4 mb-6">
+<div class="ornamental-line"></div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Culinary Excellence</span>
+<div class="ornamental-line"></div>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-gradient-gold mb-8">The Menu. <br class="md:hidden"/>Crafted With Intent.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                A symphony of bold spices, tender textures, and heritage recipes reimagined for the modern palate. Discover our curated selection of signature dishes.
+            </p>
+</section>
+<!-- Menu Container -->
+<div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Starter - Chinese Non-Veg -->
+<section class="mb-20" id="chinese-non-veg">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary tracking-wide uppercase">Starter - Chinese Non-Veg</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 italic">Bold flavors from the wok.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Chicken Momo</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Steamed or fried dumplings</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹220</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Chicken Chilli</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Spicy soy, peppers, onion</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹240</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Chicken Manchurian</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Classic dark soy gravy or dry</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹240</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Chicken 65</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Deep fried, curry leaf temper</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹240</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Chicken Lollipop</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Spicy batter fried wings</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹260</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Crispy Chilli Chicken</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Shredded chicken, sweet &amp; spicy</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹240</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Garlic Chicken</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Rich burnt garlic sauce</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹240</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Egg Chilli</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Boiled eggs, tossed in wok</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹180</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Golden Fried Prawn</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Light batter, crispy finish</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹420</div>
+</div>
+</div>
+</section>
+<div class="menu-category-divider"></div>
+<!-- Starter - Chinese Veg -->
+<section class="mb-20" id="chinese-veg">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary tracking-wide uppercase">Starter - Chinese Veg</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 italic">Fresh produce, masterfully wok-tossed.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Veg Momo</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Cabbage, carrot, aromatics</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹180</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Paneer Momo</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Cottage cheese filling</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹220</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Paneer Chilli</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Cottage cheese, peppers, soy</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹240</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Mushroom Chilli</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Button mushrooms, spicy sauce</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹230</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Veg Manchurian</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Minced vegetable dumplings</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹180</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Crispy Chilli Baby Corn</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Sweet, spicy, ultra-crisp</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹210</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Gobhi Manchurian</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Cauliflower florets in soy-garlic</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹180</div>
+</div>
+</div>
+</section>
+<div class="menu-category-divider"></div>
+<!-- Soups -->
+<section class="mb-20" id="soups">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary tracking-wide uppercase">Soups</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 italic">Warmth and comfort.</p>
+</div>
+<div class="space-y-8">
+<!-- Highlighted Special -->
+<div class="glass-panel p-6 rounded border border-primary/20 relative overflow-hidden group">
+<div class="absolute top-0 right-0 bg-primary-container text-on-primary-container font-label-sm text-label-sm px-3 py-1 rounded-bl">HOUSE SPECIAL</div>
+<div class="flex items-end justify-between">
+<div class="pr-4">
+<h3 class="font-headline-md text-headline-md text-primary gold-glow">Singh Saab Spl. Soup</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Our signature broth, rich with secret spices and premium ingredients.</p>
+</div>
+<div class="text-right">
+<div class="font-label-sm text-label-sm text-on-surface-variant">V / NV</div>
+<div class="font-body-lg text-body-lg text-primary font-bold">₹150 / 180</div>
+</div>
+</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Tomato Soup</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹120</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Sweet Corn Soup</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Veg / Non-Veg</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹120 / 150</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Hot &amp; Sour Soup</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Veg / Non-Veg</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹120 / 150</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Manchow Soup</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Veg / Non-Veg</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹120 / 150</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Lemon Coriander Soup</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Veg / Non-Veg</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹120 / 150</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Clear Soup</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Veg / Non-Veg</p>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹100 / 140</div>
+</div>
+</div>
+</section>
+<div class="menu-category-divider"></div>
+<!-- Main Course - Chinese Veg -->
+<section class="mb-20" id="main-chinese-veg">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary tracking-wide uppercase">Main Course - Chinese Veg</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 italic">Rich gravies to pair with staples.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="glass-panel p-6 rounded border border-outline-variant/30 hover:border-primary/50 transition-colors">
+<h3 class="font-body-lg text-body-lg text-primary font-bold mb-2">Paneer Chilli Gravy</h3>
+<div class="font-body-md text-body-md text-on-surface mb-4">₹260</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Cottage cheese in a luscious, spicy soy-based gravy.</p>
+</div>
+<div class="glass-panel p-6 rounded border border-outline-variant/30 hover:border-primary/50 transition-colors">
+<h3 class="font-body-lg text-body-lg text-primary font-bold mb-2">Veg Manchurian Gravy</h3>
+<div class="font-body-md text-body-md text-on-surface mb-4">₹220</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Vegetable dumplings simmered in classic dark soy sauce.</p>
+</div>
+</div>
+</section>
+<div class="menu-category-divider"></div>
+<!-- Appetizers (Small Plates) -->
+<section class="mb-20" id="appetizer">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary tracking-wide uppercase">Appetizers</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 italic">Perfect for sharing.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Roasted Papad</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹30</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Fried Papad</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹40</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Masala Papad</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹60</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Green Salad</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹60</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Onion Salad</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹40</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Kachumber Salad</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹70</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Mix Raita</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹80</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Boondi Raita</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹80</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Pineapple Raita</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹100</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Peanut Masala</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹100</div>
+</div>
+<div class="flex items-end justify-between group">
+<div class="pr-4">
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Chana Roast</h3>
+</div>
+<div class="dotted-leader"></div>
+<div class="font-body-lg text-body-lg text-primary">₹100</div>
+</div>
+</div>
+</section>
+</div>
+<!-- CTA Strip -->
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mt-12">
+<div class="glass-panel p-12 text-center rounded-lg border border-primary/20 relative overflow-hidden">
+<!-- Decorative background elements -->
+<div class="absolute -top-24 -left-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-24 -right-24 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-4 relative z-10">Can't decide where to start?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl mx-auto relative z-10">Let our servers guide you through a curated tasting experience tailored to your preferences.</p>
+<div class="flex flex-col sm:flex-row justify-center items-center gap-6 relative z-10">
+<button class="bg-primary-container text-on-primary-container font-label-sm text-label-sm px-8 py-4 rounded uppercase tracking-wider hover:bg-primary transition-colors duration-300 w-full sm:w-auto shadow-[0_0_20px_rgba(243,207,77,0.15)]">
+                        Make a Reservation
+                    </button>
+<button class="bg-transparent border border-primary text-primary font-label-sm text-label-sm px-8 py-4 rounded uppercase tracking-wider hover:bg-primary/10 transition-colors duration-300 w-full sm:w-auto flex items-center justify-center gap-2">
+<span class="material-symbols-outlined" style="font-size: 18px;">call</span>
+                        Call Us
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full bg-surface-container-lowest dark:bg-surface-container-lowest border-t border-surface-container-low dark:border-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto gap-8">
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-primary dark:text-primary tracking-tighter uppercase">
+                    THE SINGH SAAB
+                </div>
+<p class="font-label-sm text-label-sm text-on-surface-variant tracking-widest uppercase">
+                    © 2024 THE SINGH SAAB. ALL RIGHTS RESERVED.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 md:gap-16">
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-2">Location</h4>
+<span class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-opacity duration-200 hover:-translate-y-0.5 cursor-pointer inline-block">Mango, Jamshedpur</span>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-2">Social</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-200 hover:-translate-y-0.5 inline-block" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-200 hover:-translate-y-0.5 inline-block" href="#">Facebook</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-label-sm text-on-surface uppercase tracking-widest mb-2">Legal</h4>
+<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-all duration-200 hover:-translate-y-0.5 inline-block" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

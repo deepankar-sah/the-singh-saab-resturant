@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Singh Saab - Gallery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#d2c888",
+                        "on-secondary-fixed": "#201c00",
+                        "on-secondary": "#373101",
+                        "surface-tint": "#e7c443",
+                        "on-tertiary-fixed": "#001f27",
+                        "outline": "#98907b",
+                        "tertiary-fixed-dim": "#6dd4f3",
+                        "surface-dim": "#131313",
+                        "surface": "#131313",
+                        "primary-fixed": "#ffe17c",
+                        "tertiary": "#d4f3ff",
+                        "surface-variant": "#353535",
+                        "on-tertiary-fixed-variant": "#004e5f",
+                        "surface-container-low": "#1b1b1b",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary": "#d2c888",
+                        "inverse-primary": "#715c00",
+                        "inverse-surface": "#e2e2e2",
+                        "outline-variant": "#4c4635",
+                        "secondary-container": "#514a17",
+                        "on-background": "#e2e2e2",
+                        "surface-container-highest": "#353535",
+                        "on-secondary-fixed-variant": "#4e4715",
+                        "background": "#131313",
+                        "primary": "#ffedba",
+                        "on-error": "#690005",
+                        "on-tertiary-container": "#006278",
+                        "on-tertiary": "#003642",
+                        "on-surface": "#e2e2e2",
+                        "error": "#ffb4ab",
+                        "tertiary-container": "#79dfff",
+                        "inverse-on-surface": "#303030",
+                        "surface-container": "#1f1f1f",
+                        "on-primary-fixed": "#231b00",
+                        "on-primary": "#3b2f00",
+                        "surface-container-lowest": "#0e0e0e",
+                        "on-surface-variant": "#cfc6af",
+                        "primary-fixed-dim": "#e7c443",
+                        "secondary-fixed": "#efe4a2",
+                        "tertiary-fixed": "#b4ebff",
+                        "on-primary-container": "#6c5800",
+                        "primary-container": "#f3cf4d",
+                        "on-primary-fixed-variant": "#564500",
+                        "error-container": "#93000a",
+                        "on-error-container": "#ffdad6",
+                        "on-secondary-container": "#c4b97c",
+                        "surface-bright": "#393939"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "base": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Bodoni Moda"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Bodoni Moda"],
+                        "body-md": ["Hanken Grotesk"],
+                        "display-lg": ["Bodoni Moda"],
+                        "label-sm": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "display-lg": ["72px", { "lineHeight": "80px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        };
+    </script>
+<style>
+        .glow-hover {
+            transition: all 0.3s ease;
+        }
+        .glow-hover:hover {
+            box-shadow: 0 0 20px rgba(243, 207, 77, 0.15);
+            border-color: rgba(243, 207, 77, 0.5);
+        }
+        .text-glow {
+            text-shadow: 0 0 10px rgba(243, 207, 77, 0.3);
+        }
+        .shimmer-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(243, 207, 77, 0.3), transparent);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-md max-w-container-max mx-auto bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-border font-headline-md text-headline-md">
+<div class="font-brand-script text-brand-script text-primary text-glow">The Singh Saab</div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent-gold transition-all" href="#">Our Menu</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent-gold transition-all" href="#">Signature Dishes</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent-gold transition-all" href="#">Private Dining</a>
+<a class="font-label-sm text-label-sm text-primary border-b border-primary pb-1" href="#">Our Story</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-accent-gold transition-all" href="#">Contact</a>
+</nav>
+<button class="hidden md:block bg-primary-container text-on-primary-fixed px-gutter py-base rounded-full font-label-sm text-label-sm glow-hover">
+            Reserve a Table
+        </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main class="pt-[120px] pb-[120px]">
+<!-- Hero Section -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-[120px]">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary mb-gutter text-glow">Gallery. Every Detail Captured.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">A glimpse into the soul of Jamshedpur's premier dining destination—from the moody lighting to the exquisite textures.</p>
+</section>
+<!-- Divider -->
+<div class="shimmer-divider max-w-container-max mx-auto mb-[120px]"></div>
+<!-- The Space -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-[120px]">
+<h2 class="font-headline-md text-headline-md text-primary mb-gutter text-center">The Space</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-base">
+<div class="md:col-span-8 h-[400px] md:h-[600px] overflow-hidden rounded-DEFAULT border border-surface-container-high glow-hover">
+<div class="w-full h-full bg-surface-container-low bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="A wide angle shot of a luxurious fine-dining restaurant interior with a moody, noir aesthetic. Deep charcoal velvet booths line the perimeter, illuminated by soft, warm gold wall sconces casting a luminous glow against dark paneled walls. In the background, a subtle, glowing neon sign featuring a stylized turban and beard logo serves as a focal point. The tables are set impeccably with fine crystal and gold-rimmed plates, waiting for guests in the dim, elegant atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCICdDjf9wzhqPm0dQwtxNNLnN3rYGR6gL9DPKQzc0WNXvvIYENQ8fkal-0YgkbEaWF9b_YhxpS9Gb7oAznVJ1sssfh1rr8fdErY3-Wd6JYTahfd8oKKaAhlAA3NdBV-7D6IusAqW5I_45t3VvxVtcJLv1_YGCSdvUNSOFrOxyCV198BPvW9dUanLK4ELbx3d8NeLi21Zg0ygjxX6JjtWdi_eLTVQWS7dI0C2o3nJN2FoV1pQnaC-y-RJTBNuvbHdO7v0kTmSZf0OM')">
+</div>
+</div>
+<div class="md:col-span-4 flex flex-col gap-base h-[400px] md:h-[600px]">
+<div class="flex-1 overflow-hidden rounded-DEFAULT border border-surface-container-high glow-hover">
+<div class="w-full h-full bg-surface-container-low bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="A close-up view of an elegant dining table setting in a dimly lit, high-end restaurant. Focus is on a polished gold spoon resting beside a pristine white porcelain plate, catching a single beam of warm ambient light. The background is beautifully blurred (bokeh), showing deep black textures and hints of golden luminescence from distant light fixtures, creating a sense of intimacy and premium craftsmanship." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDx5HwGJh2vbsyY4D04Z2W8VeWBWrHf0CXkiW9k52mpK4kuIQvxx-R9YvA25DBQ8zT72rlDATSzsHQM1td5cD2wzTFbxX-9sktMrC3O81WaF0xxL7ZKXL6-5XsqIu-WbQ24HY3dBG7vJ0DtRNHMEypHcTO4eTiG0mLQxumkhaO1jHTieWBu9r0POI2SgHhjIFsh6yyLEQau8IXdtF40Vla2reYRpXyrZ2CXmi2jVn5uo15FKZvDhPV7sB10SOKKibP8b9nGpApEsfw')">
+</div>
+</div>
+<div class="flex-1 overflow-hidden rounded-DEFAULT border border-surface-container-high glow-hover">
+<div class="w-full h-full bg-surface-container-low bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="Detail shot of a bespoke lighting fixture in a luxury dining space. An intricate, modern chandelier crafted from brushed brass and dark metal suspends over a shadowed area, emitting a soft, diffuse golden glow. The surrounding ceiling and walls are rendered in pure black, emphasizing the fixture's glowing, sculptural form and the overall sophisticated, minimalist aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_dEgCqVF7ejYI3y-k_ube4FYlFDMNuGbM6nf0HsdtBa_dCpi2ZgL3ZJ-oAsDWhZknWa5a-aqxwPno0nDhqDN3nLT5HBqd9ifwfxWoGLgD71yB0IGbBQSiXNal1c4L0rYd8ePyBKeYnh1KXHvci9HOWk3Rgm3rQzkqFGiJ5wY1ARVtECV5Qu5TUbwEalxt7JUGOkmLJvRGIDUNJITDzg2BzxLuNmdm4sDyYwzAKqA1FTFI-GXfVmdT-3nVuODmhiC2NxNOAbwZ1_E')">
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="shimmer-divider max-w-container-max mx-auto mb-[120px]"></div>
+<!-- The Craft -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-[120px]">
+<h2 class="font-headline-md text-headline-md text-primary mb-gutter text-center">The Craft</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="group relative h-[500px] overflow-hidden rounded-DEFAULT border border-surface-container-high glow-hover">
+<div class="w-full h-full bg-surface-container-low bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="Overhead macro shot of a vibrant, steaming bowl of Asian-style spicy soup, specifically highlighting rich red and gold chili oil swirling on the surface. The dish is presented in a dark, matte ceramic bowl that contrasts sharply with the rich colors of the broth. Carefully placed micro-greens garnish the center. The lighting is dramatic, spotlighting the bowl against an absolute black surface to highlight the intricate textures and steam rising gracefully." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClk6W-bmZEV8LoVYIlsNLZxBUzvtQI2GXSnMXdcYcKlxBqEb12qiJasB6P3psjgFXHThS10PN_gCTtPc_ZT6KyikgALWeddI65oSeSgj_AFx57rzz24KDms8Bnu4QFm3-50439rNPLWJq0JDydhXmoqdDkuZ7Q3ZO6enLX81cSgZ31esJLDUUMf_jFjo-lW8wWCc4uf0lxcsQRGmYpdP7a1e8Ac0fB9ZEhQhER0mSonA9CZ8I8x4szEjHm5T8q45W5CUIxVYX_eQc')">
+</div>
+<div class="absolute bottom-0 left-0 w-full p-gutter bg-gradient-to-t from-black to-transparent">
+<h3 class="font-headline-md text-headline-md text-primary">Singh Saab Spl. Soup</h3>
+</div>
+</div>
+<div class="group relative h-[500px] overflow-hidden rounded-DEFAULT border border-surface-container-high glow-hover">
+<div class="w-full h-full bg-surface-container-low bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" data-alt="A beautifully plated dish of pan-fried fish fillets coated in a glossy, dark soy and chili glaze, resting on a bed of vibrant green scallions. The fish is served on a dark slate plate, emphasizing the glossy texture of the sauce and the crispy edges of the fillets. Dramatic, directional lighting highlights the glistening sauce, while the surrounding environment fades into deep shadow, creating a gallery-like focus on the culinary art." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCVGu6X-WI9qH6nGlMdrx661P7Ehc2p7ouaR80Va2hPKdihe3W2twH5PRy_V1-lO_DBgmY5yQRRObpfBBp0tg4JNGQm54KAhARlm9I2jRmckVCwqGqHOk09qWp1fjLY1W4Dgk0tNcArxo2UP6Ks8Cr3CCJvuWnFOEDS7eXhqvKeORjO-AEUpM6nArB5jfarQnSpYDZAf3F5MhHgsFA0RyMU5z87EPOKAyhB2Qa3iEJM_QfGX1VYhhChtlMg4T1cGMwBEEkjdgUzwVU')">
+</div>
+<div class="absolute bottom-0 left-0 w-full p-gutter bg-gradient-to-t from-black to-transparent">
+<h3 class="font-headline-md text-headline-md text-primary">Pan Fried Chilli Fish</h3>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="shimmer-divider max-w-container-max mx-auto mb-[120px]"></div>
+<!-- Moments -->
+<section class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-md text-headline-md text-primary mb-gutter text-center">Moments</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-base">
+<div class="h-[300px] overflow-hidden rounded-DEFAULT border border-surface-container-high glow-hover">
+<div class="w-full h-full bg-surface-container-low bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="A candid photograph capturing a couple clinking champagne glasses in a dark, intimate restaurant setting. The warm, luminous glow from a candle on the table illuminates their smiling faces and the effervescence in the glasses. The background is a soft blur of deep blacks and glowing golden pinpoints of light, conveying a sense of exclusive celebration and romantic luxury." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDP_YYVTEOfWDe-OPYtu8H8NKg0bTXtmMXEibhy37lZkiMGXc0k-OpoejwCdZwFAclohcQMnpa22vM31y6vKuDr9wN2O_jcUfjA8YgH33OclsCuJZEITyN__dG-9yi9qlfzGjn8VPIDt4LJM6iDkfrfQZGKpRoyZHxE_6Zs6r4v2BPnjVOAcPwkcY43Y8EZOvhaDpAKCLIGaNFcqej378_eL-fljbCX02SwkO1G6CHRyJDY1tNSBJcnOJXjv3Ww6O3S9AjSGUf46qo')">
+</div>
+</div>
+<div class="h-[300px] overflow-hidden rounded-DEFAULT border border-surface-container-high glow-hover">
+<div class="w-full h-full bg-surface-container-low bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="A silhouette shot of a sharply dressed waiter pouring wine at a table in a high-end restaurant. The scene is dominated by dramatic chiaroscuro lighting, with the polished curve of the wine bottle and the rim of the glass catching a striking gold highlight against the stark black background. The atmosphere is hushed, precise, and sophisticated." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC9FZwfLJ16cbc9RaOEIDw58ovwTAkDo2-HMpAP07KlI2V5QOcnUgKf5p8_MZlYC_0l_h5hrjYH8AnhbCo7-JtK3mhDGZ6I9OJhNgGFrSntFOIPvNmXYKl643KmCf6BC0u2N3cnkruKDlnQelAWUrsRZuQVNnz75NglcmhpO_s1gytU0aFaQeevosWG51FeUqXMyCcSCSkPvtn63RkA9fvnVhr53uNqnu1RNUdVI8JBRcTgX0s6NVvsEH6uWlwoNRUR8e7lz6Dd7Jg')">
+</div>
+</div>
+<div class="h-[300px] overflow-hidden rounded-DEFAULT border border-surface-container-high glow-hover">
+<div class="w-full h-full bg-surface-container-low bg-cover bg-center transition-transform duration-700 hover:scale-105" data-alt="A close-up of an elegant dessert being presented on a dark wooden table. A sparkler is gently burning next to a decadent dark chocolate cake accented with gold leaf. The bright, warm sparks provide the primary light source, creating a festive yet deeply sophisticated mood against the surrounding heavy shadows." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAXECo7-t-3f0MmZoeF8CVgPTdLX-4xytFuceVNxEJhXj-c4TEh6H2Lp69dQoDJEP_NOSqU8q_Z0j6dLIZ12fAPkvKWd9jeIJqu17_-33gN25ae_YAUpW8VCoibyFFku5WgYnldgJHf3nCmxKtHbURJc_dqArzYVbVHGyoyZ-JV95t4vxhWgqPN7ZzCm9nYmZMZOedwK_Yv9P8shq-k-wH84xLPdMc3mBlZvQL2wwn3YQX0d9rxDC8ZJQXsinUHGB6FyraCHKNikms')">
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-[64px] px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-[64px] max-w-container-max mx-auto bg-surface dark:bg-surface border-t border-border mt-[120px]">
+<div class="md:col-span-1">
+<div class="font-brand-script text-heading-md text-primary mb-base text-glow">The Singh Saab</div>
+<p class="font-body-md text-body-md text-on-surface-variant">© 2024 The Singh Saab. All rights reserved. Crafted with Soul.</p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-gutter justify-start md:justify-end items-center">
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200 underline-offset-4 hover:underline" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200 underline-offset-4 hover:underline" href="#">Terms of Service</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200 underline-offset-4 hover:underline" href="#">Press Kit</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors duration-200 underline-offset-4 hover:underline" href="#">Careers</a>
+</div>
+</footer>
+</body></html>

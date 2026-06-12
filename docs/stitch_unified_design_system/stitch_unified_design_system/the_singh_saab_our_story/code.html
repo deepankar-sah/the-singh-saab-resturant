@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Story - The Singh Saab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-container-low": "#1b1b1b",
+                      "inverse-on-surface": "#303030",
+                      "secondary-fixed-dim": "#d2c888",
+                      "secondary-fixed": "#efe4a2",
+                      "on-primary-container": "#6c5800",
+                      "outline": "#98907b",
+                      "outline-variant": "#4c4635",
+                      "on-tertiary-fixed-variant": "#004e5f",
+                      "inverse-surface": "#e2e2e2",
+                      "on-secondary-fixed-variant": "#4e4715",
+                      "tertiary-container": "#79dfff",
+                      "on-primary": "#3b2f00",
+                      "secondary-container": "#514a17",
+                      "on-primary-fixed-variant": "#564500",
+                      "surface-container": "#1f1f1f",
+                      "surface-dim": "#131313",
+                      "on-tertiary-container": "#006278",
+                      "on-error": "#690005",
+                      "surface": "#131313",
+                      "surface-tint": "#e7c443",
+                      "surface-container-lowest": "#0e0e0e",
+                      "surface-variant": "#353535",
+                      "secondary": "#d2c888",
+                      "primary-container": "#f3cf4d",
+                      "on-secondary-fixed": "#201c00",
+                      "on-background": "#e2e2e2",
+                      "inverse-primary": "#715c00",
+                      "background": "#131313",
+                      "error": "#ffb4ab",
+                      "tertiary": "#d4f3ff",
+                      "on-secondary": "#373101",
+                      "primary": "#ffedba",
+                      "primary-fixed-dim": "#e7c443",
+                      "on-surface": "#e2e2e2",
+                      "error-container": "#93000a",
+                      "surface-container-high": "#2a2a2a",
+                      "on-tertiary-fixed": "#001f27",
+                      "primary-fixed": "#ffe17c",
+                      "tertiary-fixed": "#b4ebff",
+                      "surface-bright": "#393939",
+                      "on-secondary-container": "#c4b97c",
+                      "surface-container-highest": "#353535",
+                      "tertiary-fixed-dim": "#6dd4f3",
+                      "on-surface-variant": "#cfc6af",
+                      "on-primary-fixed": "#231b00",
+                      "on-error-container": "#ffdad6",
+                      "on-tertiary": "#003642"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "gutter": "24px",
+                      "container-max": "1280px",
+                      "base": "8px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Bodoni Moda"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-sm": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg-mobile": [
+                              "Bodoni Moda"
+                      ],
+                      "display-lg": [
+                              "Bodoni Moda"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "72px",
+                              {
+                                      "lineHeight": "80px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .bloom-effect {
+            box-shadow: 0 0 20px rgba(243, 207, 77, 0.1);
+        }
+        .text-bloom {
+            text-shadow: 0 0 10px rgba(243, 207, 77, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-outline-variant/30 transition-all duration-300" id="navbar">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-base max-w-container-max mx-auto h-[72px]">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md text-primary tracking-tighter uppercase shrink-0" href="#">
+                THE SINGH SAAB
+            </a>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Menu</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Our Story</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Gallery</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Reservations</a>
+</div>
+<!-- Trailing Action -->
+<button class="hidden md:inline-flex bg-primary-container text-on-primary-container px-6 py-3 rounded-DEFAULT font-label-sm text-label-sm uppercase hover:bg-primary transition-colors duration-300 items-center justify-center bloom-effect">
+                Reserve a Table
+            </button>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-[72px]">
+<!-- Story Hero -->
+<section class="min-h-[80vh] flex flex-col items-center justify-center px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<!-- Subtle Logo Background -->
+<div class="absolute inset-0 z-0 opacity-5 flex items-center justify-center pointer-events-none">
+<img alt="The Singh Saab Logo Background" class="w-full max-w-[800px] h-auto object-contain mix-blend-screen grayscale blur-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwSwpQ2wKXXnN4IPC0GqDlLt73fsHuR5KRJ8i2GXgqJ_9jjgN-LoPem_irzLveiHEmTVgs1msVgqyRFI_5m07-EuE2_fwovA2yQ5kFHi8_NIwVx0v5mLKuQnWeSGTt9fY8o-fUTFDc9KV_y__8qysLg-QzdaWvEfL6e3NMlImv3BlaAyI6evDexXhwt2cUVOpW-KvJBMWjOiLj6fLmjdCkelj8SnQF6ALB5tBXOwlgq9_h5gJQMU_p8NRqp8CD6tmhqVY4KLTn_gM"/>
+</div>
+<div class="max-w-4xl mx-auto text-center z-10 relative mt-20">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-6 block">Our Story</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-8 leading-tight">
+                    Every Texture Chosen With Intent. Every Detail Built With Soul.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    A journey of passion, precision, and the relentless pursuit of culinary excellence. Welcome to the heart of The Singh Saab.
+                </p>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+<span class="material-symbols-outlined text-primary opacity-50">arrow_downward</span>
+</div>
+</section>
+<!-- The Vision -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-8">
+<div class="w-12 h-1 bg-primary mb-8"></div>
+<h2 class="font-headline-md text-headline-md text-primary">Built From the Ground Up, On Purpose</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<p>
+                            We didn't just open a restaurant; we engineered an experience. From the initial sketches to the final polish of the brass fixtures, every element of The Singh Saab was deliberately constructed to evoke a sense of Noir Excellence.
+                        </p>
+<p>
+                            Our design philosophy embraces minimalism fused with opulence. We utilize heavy "blackspace" to allow our vibrant gold accents and culinary creations to command attention. It is a space where precision meets passion.
+                        </p>
+</div>
+</div>
+<div class="relative h-[600px] bg-surface rounded-lg border border-outline-variant/30 overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 grayscale hover:grayscale-0" data-alt="A sophisticated, dimly lit restaurant interior showcasing architectural precision. Deep absolute blacks dominate the space, contrasted by luminous gold accents and warm ambient lighting. Elegant, minimalist furniture sits on dark textured flooring. The atmosphere is one of high-end exclusivity, luxury, and meticulous design, fitting for a premium dining establishment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZV_jmDPh0A_kKWnIST6z3MRgBxKX4b0bQComjlX6GXL6b_JmVt3_8-WR7NPSX-C4PbfzJhpWelBt5r5UIat9EQ93agM7Omdf9092yQZHuXcy_Uirh0leJwtXr9eClyEksVgEQBqJWYzs92YRiV_ENa-ea4gnpd1T2xUVtnkDSL87JvukR1r51ZER8r45aTjRt2h5N_yyw_2aHxUknEmdwusNULOAvivJqp5EF7j6xXc3EV1sBiYjwqIQQY2xFlRcSJZP1xgAeUbQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- The Name -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop relative">
+<div class="max-w-3xl mx-auto text-center space-y-8">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 block" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<h2 class="font-headline-md text-headline-md text-primary">What's in a Name</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    "Saab" is more than a title; it is a promise of unparalleled hospitality. It signifies respect, authority, and an unwavering commitment to treating every guest as royalty. The Singh Saab embodies this ethos—a sanctuary where premium service and sophisticated atmosphere converge to create moments of profound indulgence.
+                </p>
+</div>
+</section>
+<!-- The Menu -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 relative h-[600px] bg-surface rounded-lg border border-outline-variant/30 overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-80 transition-opacity duration-700 grayscale hover:grayscale-0" data-alt="A close-up, highly stylized shot of a meticulously plated multi-cuisine dish resting on a matte black ceramic plate. The lighting is dramatic, highlighting the vibrant colors of the food against the absolute black background. Subtle steam rises from the hot food, and tiny specks of edible gold leaf catch the light. The composition is precise, echoing an editorial food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIqflYb_bMYt7lLvcLc5k6CEHxKj8bnYhv4ywJHHMVaPGbEtJb82MZA3Vx74KGkc4WgMs-eYGL2tKdHrk-pbwdYWhhCQ5bZ2gDLjfLAohoqEXT9oYCvSX939Mhd_ErqEbrlQYgLT29si-suJwYhu72YoGjdJC3WLCXG9diXH7dbZzTFsJyJr3SB_Cje5BAOZeDYaAXJrenzo2g1oCm7M0ziQf3a5XpL7Y0ZvNWc3wE6T2k_65qocrMXkSS3_OMfHbIhgJGeuWDCR8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+</div>
+<div class="space-y-8 order-1 md:order-2">
+<div class="w-12 h-1 bg-primary mb-8"></div>
+<h2 class="font-headline-md text-headline-md text-primary">A Table for Every Craving</h2>
+<div class="space-y-6 font-body-lg text-body-lg text-on-surface-variant">
+<p>
+                            Our culinary narrative is unconstrained by borders. We curate a multi-cuisine repertoire that demands perfection in every dish, whether it's a deeply complex traditional curry or a minimalist contemporary fusion plate.
+                        </p>
+<p>
+                            We source only the finest ingredients, treating them with the reverence they deserve. Each item on our menu is a testament to our chefs' technical mastery and creative vision, designed to provoke thought and pleasure in equal measure.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- The Experience -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop text-center relative overflow-hidden">
+<!-- Background Texture -->
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at center, #f3cf4d 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-4xl mx-auto relative z-10 space-y-12">
+<h2 class="font-headline-md text-headline-md text-primary">More Than a Meal</h2>
+<div class="flex items-center justify-center space-x-2 text-primary mb-8">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-3xl text-primary/50" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<p class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface font-light italic leading-tight opacity-90">
+                    "A resounding 4.6 stars. The premier destination for celebrations that demand perfection."
+                </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    We don't just serve food; we curate memories. From intimate anniversaries to monumental business closures, The Singh Saab provides the impeccable backdrop for life's significant moments.
+                </p>
+</div>
+</section>
+<!-- Closing CTA -->
+<section class="py-32 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="max-w-2xl mx-auto text-center space-y-10">
+<h2 class="font-headline-md text-headline-md text-primary mb-4 text-bloom">Come experience it for yourself.</h2>
+<div class="flex flex-col items-center space-y-4 text-on-surface-variant font-body-lg text-body-lg">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Mango, Jamshedpur</span>
+</div>
+</div>
+<div class="pt-8">
+<button class="inline-flex items-center justify-center bg-transparent border border-primary text-primary px-8 py-4 rounded-DEFAULT font-label-sm text-label-sm uppercase hover:bg-primary/10 transition-colors duration-300 group">
+<span>Get Directions</span>
+<span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-surface-container-low">
+<div class="flex flex-col md:flex-row justify-between items-start px-margin-mobile md:px-margin-desktop py-12 max-w-container-max mx-auto space-y-8 md:space-y-0">
+<!-- Brand -->
+<div>
+<a class="font-headline-md text-headline-md text-primary tracking-tighter uppercase mb-4 block" href="#">
+                    THE SINGH SAAB
+                </a>
+<p class="text-on-surface-variant font-label-sm text-label-sm">
+                    © 2024 THE SINGH SAAB. ALL RIGHTS RESERVED.
+                </p>
+</div>
+<!-- Links -->
+<div class="flex flex-wrap gap-x-8 gap-y-4">
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase hover:text-primary transition-opacity duration-200 hover:-translate-y-0.5 transition-transform" href="#">Mango, Jamshedpur</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase hover:text-primary transition-opacity duration-200 hover:-translate-y-0.5 transition-transform" href="#">Instagram</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase hover:text-primary transition-opacity duration-200 hover:-translate-y-0.5 transition-transform" href="#">Facebook</a>
+<a class="text-on-surface-variant font-label-sm text-label-sm uppercase hover:text-primary transition-opacity duration-200 hover:-translate-y-0.5 transition-transform" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg', 'shadow-black/50');
+            } else {
+                nav.classList.remove('shadow-lg', 'shadow-black/50');
+            }
+        });
+    </script>
+</body></html>
